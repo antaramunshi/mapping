@@ -3,7 +3,7 @@ import pandas
 
 data = pandas.read_csv("Volcanoes.csv")
 lat= list(data["LAT"])
-lon= list(data["LOn"])
+lon= list(data["LON"])
 map = folium.Map(location= [40,-100], tiles= "Stamen Terrain ")
 fg= folium.FeatureGroup(name= "My Map")
 for lt, ln in zip (lat,lon):
